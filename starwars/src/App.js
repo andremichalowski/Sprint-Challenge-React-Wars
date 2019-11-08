@@ -1,13 +1,16 @@
 import React from 'react';
 import './App.css';
-import CardContainer from './components/CardContainer'
+import CardContainer from './components/CardContainer';
+import StyledCard from './components/StyledCard';
 
 const App = () => {
 
   return (
     <div className="App">
       <h1 className="Header">React Wars</h1>
-      <CardContainer />
+      <StyledCard>
+        <CardContainer />
+      </StyledCard>
     </div>
   );
 }

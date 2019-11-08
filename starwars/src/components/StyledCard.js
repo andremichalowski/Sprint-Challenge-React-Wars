@@ -8,6 +8,13 @@ const StyledCard = styled.div`
     background-color: beige;
     border: 2px dashed brown;
     border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    
+
     
     h1 {
         color: gray;

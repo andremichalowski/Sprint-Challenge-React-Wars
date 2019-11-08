@@ -11,7 +11,6 @@ const Card = (props) => {
             <h2> Home: {props.person.homeworld}</h2>
             <h2> Height: {props.person.height}</h2>
             <h2> Mass: {props.person.mass}</h2>
-
         </StyledCard>
     </div>
   );
