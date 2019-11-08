@@ -10,8 +10,8 @@ const CardContainer = () => {
     useEffect(() => {
         axios.get('https://swapi.co/api/people')
         .then(res => {
-            // console.log(res);
-            console.log(res.data.results)
+            console.log(res);
+            // fetchPeople(res.data.results)
 
         })
         .catch(err => {
@@ -30,6 +30,11 @@ const CardContainer = () => {
   return (
     <div className="CardContainer">
       <h1 className="Header">React Wars</h1>
+        {/* people.map((people, index)) => {
+        // <Card key={index} people={people}/>
+        <Card /> */}
+      {/* } */}
+      <Card />
       <Card />
       <Card />
       <Card />
