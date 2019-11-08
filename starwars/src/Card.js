@@ -1,12 +1,15 @@
 import React from 'react';
 
+import StyledCard from './StyledCard';
 
-const Card = () => {
-
- 
+const Card = (props) => {
   return (
-    <div className="App">
-      <h1 className="Header">React Wars</h1>
+    <div className="Card">
+        {/* <StyledCard> */}
+            <h1> {props.person.name}</h1>
+            <h2> Birth Year: {props.person.birth_year}</h2>
+            <h2> Home: {props.person.homeworld}</h2>
+        {/* </StyledCard> */}
     </div>
   );
 }
