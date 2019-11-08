@@ -35,3 +35,16 @@ const CardContainer = () => {
 }
 
 export default CardContainer;
+
+
+useEffect(() => {
+  axios
+  .get('https://swapi.co/api/planets')
+  .then(res => {
+      // console.log(res)
+      fetchPeople(res.data.results)
+  })
+  .catch(err => {
+      console.log('No response from the server', err)
+  })
+}, [])
