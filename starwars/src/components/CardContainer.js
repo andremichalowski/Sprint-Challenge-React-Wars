@@ -12,10 +12,9 @@ const CardContainer = () => {
     useEffect(() => {
         axios
         .get('https://swapi.co/api/people')
-        .then(response => {
-            // console.log(res);
-            fetchPeople(response.data.results)
-
+        .then(res => {
+            console.log(res)
+            fetchPeople(res.data.results)
         })
         .catch(err => {
             console.log('No response from the server', err)
