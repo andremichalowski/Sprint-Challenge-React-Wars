@@ -6,9 +6,10 @@ import axios from 'axios';
 const CardContainer = () => {
 
     useEffect(() => {
-        axios.get('https://swapi.co/documentation#people')
+        axios.get('https://swapi.co/api/people')
         .then(res => {
             console.log(res);
+            
         })
         .catch(err => {
             console.log('No response from the server', err)
