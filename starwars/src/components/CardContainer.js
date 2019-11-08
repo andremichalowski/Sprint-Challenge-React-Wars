@@ -12,9 +12,9 @@ const CardContainer = () => {
     useEffect(() => {
         axios
         .get('https://swapi.co/api/people')
-        .then(res => {
+        .then(response => {
             // console.log(res);
-            fetchPeople(res.data.results)
+            fetchPeople(response.data.results)
 
         })
         .catch(err => {
@@ -31,11 +31,6 @@ const CardContainer = () => {
         )
         })
     }
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
     </div>
   );
 }
